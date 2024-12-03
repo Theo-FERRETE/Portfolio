@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Theo FERRETE</title>
     <link rel="stylesheet" href="style css.css">
+    <style>
+        /* Styles pour l'animation intégrés dans la balise <style> */
+        .section, h1, h2 {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -14,44 +26,52 @@
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="fansite1.html">Fansite Eminem</a></li>
-                <li><a href="Transformers.html"> PAGE Transformers</a></li>
+                <li><a href="Transformers.html">PAGE Transformers</a></li>
                 <li><a href="Formule1.html">PAGE Formule 1</a></li>
-                <li><a href="AUDI.html"> AUDI</a></li>
+                <li><a href="AUDI.html">AUDI</a></li>
+                <li><a href="New York.html">New York</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="accueil" class="section">
         <h1>Bienvenue sur mon Portfolio</h1>
-        <p>Je suis Theo FERRETE, Etudiant à L'ecole La Plateforme. Je voudrais décrochez mon Diplome en tant que Web devellopeur.</p>
+        <p>Je suis Theo FERRETE, étudiant à l'école La Plateforme. Je voudrais décrocher mon diplôme en tant que Web développeur.</p>
     </section>
 
     <section id="projets" class="section">
         <h2>Mes Projets</h2>
         <div class="projets-container">
             <div class="projet">
-                <img src="c:\Users\theof\OneDrive\Bureau\HTML-CSS\Images Site et Portfolio\Capture d'écran 2024-11-26 111336.png" alt="Projet 1" class="projet-image">
                 <h3>Site fan Eminem</h3>
-                <p>Voici mon 1er site HTML fais au sein de mon ecole au cours d'un projet.</p>
-                <li><a href="fansite1.html">Eminem</a></li>
+                <img src="c:\Users\theof\OneDrive\Bureau\HTML-CSS\Images Site et Portfolio\Capture d'écran 2024-11-26 111336.png" alt="Eminem" class="hero-image">
+                <p>Voici mon 1er site HTML fait au sein de mon école au cours d'un projet.</p>
+                <a href="fansite1.html">Voir le site</a>
             </div>
             <div class="projet">
-                <img src="c:\Users\theof\OneDrive\Bureau\HTML-CSS\Images Site et Portfolio\transformers-4k-windows-for-desktop-wallpaper-thumb.jpg" alt="Projet 2" class="projet-image">
+                <img src="c:\Users\theof\OneDrive\Bureau\HTML-CSS\Images Site et Portfolio\transformers-4k-windows-for-desktop-wallpaper-thumb.jpg" alt="Véhicule phare Audi" class="hero-image">
                 <h3>Page Transformers</h3>
-                <p>Projet sur un film de ma jeunesse</p>
-                <li><a href="Transformers.html">Transformers</a></li>
+                <p>Projet sur un film de ma jeunesse.</p>
+                <a href="Transformers.html">Voir le site</a>
             </div>
             <div class="projet">
-                <img src="c:\Users\theof\OneDrive\Bureau\HTML-CSS\Images Site et Portfolio\2024-liveries-full.jpg" alt="Formule 1" class="projet-image">
+                <img src="c:\Users\theof\OneDrive\Bureau\HTML-CSS\Images Site et Portfolio\2024-liveries-full.jpg" alt="Véhicule phare Audi" class="hero-image">
                 <h3>Formule 1</h3>
-                <li><a href="Formule1.html">Formule 1</a></li>
                 <p>Projet HTML portant sur le Monde de la Formule 1.</p>
+                <a href="Formule1.html">Voir le site</a>
             </div>
             <div class="projet">
-                <img src="c:\Users\theof\OneDrive\Bureau\HTML-CSS\Site Audi\Audi-symbol.jpg" alt="Projet 1" class="projet-image">
+                <img src="c:\Users\theof\OneDrive\Bureau\HTML-CSS\Site Audi\Audi-symbol.jpg" alt="Véhicule phare Audi" class="hero-image">
                 <h3>Audi</h3>
-                <p>Site d'une marque Automobile allemande</p>
-                <li><a href="AUDI.html">Audi</a></li>
+                <p>Site d'une marque automobile allemande.</p>
+                <a href="AUDI.html">Voir le site</a>
+            </div>
+            <div class="projet">
+                <h3>New York</h3>
+                <img src="c:\Users\theof\OneDrive\Bureau\HTML-CSS\Site New York\New York.jpeg" alt="New York" class="hero-image">
+                <p>Bienvenue à New York.</p>
+                <a href="New York.html">Voir le site</a>
+            </div>   
         </div>
     </section>
 
@@ -59,12 +79,26 @@
         <h2>Contactez-moi</h2>
         <p>Voici mes coordonnées si vous avez des questions :</p>
         <ul>
-            <li><strong>Email :</strong> <a href="mailto:theo.ferrete@gmail.com ou theo.ferrete@laplateforme.io">theo.ferrete@gmail.com ou theo.ferrete@laplateforme.io</a></li>
+            <li><strong>Email :</strong> <a href="mailto:theo.ferrete@gmail.com">theo.ferrete@gmail.com</a> ou <a href="mailto:theo.ferrete@laplateforme.io">theo.ferrete@laplateforme.io</a></li>
             <li><strong>Téléphone :</strong> 06 69 78 14 52</li>
             <li><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/theo-ferrete-542a6833a/">Theo Ferrete</a></li>
             <li><strong>Adresse :</strong> Rognac, France</li>
         </ul>
     </section>
 
+    <script>
+        // Message de bienvenue
+        window.onload = function() {
+            alert("Bienvenue Sur Ce Portfolio");
+            
+            // Animation pour les sections
+            const elements = document.querySelectorAll(".section, h1, h2");
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add("visible");
+                }, index * 300);
+            });
+        };
+    </script>
 </body>
 </html>
