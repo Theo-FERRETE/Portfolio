@@ -1,0 +1,127 @@
+/* Styles globaux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* En-tête */
+header {
+    background-color: #d00000;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Contenu principal */
+main {
+    padding: 2rem;
+}
+
+/* Box */
+.box {
+    background-color: rgb(184, 180, 180);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Section Les grands pilotes */
+.pilote-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.pilote-image {
+    flex: 0 0 40%;
+    margin-right: 2rem;
+}
+
+.pilote-image img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.pilote-description {
+    flex: 1;
+}
+
+.pilote-description strong {
+    font-size: 1.2rem;
+    color: #d00000;
+}
+
+.pilote-description {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Section Les circuits mythiques */
+.circuit-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.circuit-image {
+    flex: 0 0 40%;
+    margin-right: 2rem;
+}
+
+.circuit-image img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.circuit-description {
+    flex: 1;
+}
+
+.circuit-description strong {
+    font-size: 1.2rem;
+    color: #d00000;
+}
+
+.circuit-description {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Media Query pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .pilote-container, .circuit-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pilote-image, .circuit-image {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        flex: 0 0 100%;
+    }
+}

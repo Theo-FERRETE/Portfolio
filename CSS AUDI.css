@@ -1,0 +1,281 @@
+/* Définition des couleurs Audi */
+:root {
+  --audi-red: #d1001d;
+  --audi-gray: #4c4c4c;
+  --audi-black: #1e1e1e;
+  --audi-white: #ffffff;
+  --audi-light-gray: #f4f4f4;
+}
+
+/* Reset des marges et des bordures par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles de base pour le body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--audi-light-gray);
+  color: var(--audi-gray);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--audi-black);
+}
+
+header .logo img {
+  width: 150px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: var(--audi-white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Section principale */
+.hero {
+  position: relative;
+  text-align: center;
+  color: var(--audi-white);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--audi-red);
+  color: var(--audi-white);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #b20018;
+}
+
+/* Section des modèles */
+.models {
+  padding: 50px 20px;
+  background-color: var(--audi-white);
+  text-align: center;
+}
+
+.models h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--audi-black);
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.car {
+  background-color: var(--audi-light-gray);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.car img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.car h3 {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  color: var(--audi-black);
+}
+
+.car p {
+  font-size: 1rem;
+  color: var(--audi-gray);
+  padding: 0 15px 15px;
+}
+
+/* Section des prix */
+.price {
+  font-size: 1.2rem;
+  color: var(--audi-red);
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 0 15px 15px;
+}
+
+/* Section technologie */
+.technology {
+  padding: 50px 20px;
+  background-color: var(--audi-black);
+  color: var(--audi-white);
+  text-align: center;
+}
+
+.technology h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.tech-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.tech-images img {
+  width: 48%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section à propos */
+.about {
+  padding: 50px 20px;
+  background-color: var(--audi-white);
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--audi-black);
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: var(--audi-gray);
+  margin-bottom: 30px;
+}
+
+.about img {
+  width: 80%;
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section contact */
+.contact {
+  padding: 50px 20px;
+  background-color: var(--audi-light-gray);
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--audi-black);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact label {
+  font-size: 1rem;
+  color: var(--audi-gray);
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  width: 80%;
+  max-width: 600px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  padding: 12px 30px;
+  background-color: var(--audi-red);
+  color: var(--audi-white);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #b20018;
+}
+
+/* Footer */ 
+footer {
+  padding: 20px;
+  background-color: var(--audi-black);
+  color: var(--audi-white);
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+footer .socials {
+  margin-top: 20px;
+}
+
+footer .socials a {
+  margin: 0 15px;
+  color: var(--audi-white);
+  text-decoration: none;
+}
+
+/* Ajuster la taille des logos */
+footer .socials a img {
+  width: 40px; 
+  height: 40px; 
+  object-fit: contain; 
+}
+
+footer .socials a:hover {
+  color: var(--audi-red);
+}
