@@ -1,0 +1,214 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #0066ff; 
+    transition: color 0.3s ease; 
+}
+
+a:hover {
+    color: #ff6600;
+}
+
+header {
+    background: linear-gradient(90deg, #0066ff, #00cc99); 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #2b02f8;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.projets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.projet {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-align: center;
+}
+
+.projet:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.projet img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.projet h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.projet p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.projet a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0066ff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.projet a:hover {
+    background: #ff6600;
+    color: #fff;
+}
+
+/* Formulaire de contact */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    background-color: #0066ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff6600;
+}
+
+.section, h1, h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Media Queries spécifiques pour le Galaxy A54 */
+
+
+@media only screen and (min-width: 360px) and (max-width: 390px) {
+    body {
+      font-size: 30px;
+    }
+  
+    button {
+      font-size: 18px;
+      background-color: #03a9f4;
+    }
+  
+    header {
+      font-size: 24px;
+      padding: 15px;
+    }
+  }
+  
+  /* Mode portrait spécifique */
+  @media only screen and (max-width: 2340px) and (orientation: portrait) {
+    main {
+      background-color: #e8f5e9;
+    }
+  
+    button {
+      width: 80%;
+    }
+  }
+  
+ 
+  @media only screen and (max-height: 2340px) and (orientation: landscape) {
+    main {
+      background-color: #ffecb3;
+    }
+  
+    button {
+      width: 75%;
+    }
+  }
+  
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), 
+         only screen and (min-resolution: 192dpi) {
+    body {
+      font-size: 15px;
+    }
+  
+    img {
+      max-width: 50%;
+      height: auto;
+    }
+  }
