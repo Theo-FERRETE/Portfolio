@@ -20,7 +20,7 @@ a:hover {
 header {
     background: linear-gradient(90deg, #0066ff, #00cc99); 
     color: #fff;
-    padding: 20px 0;
+    padding: 15px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -39,13 +39,13 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     font-weight: bold;
     color: #fff;
 }
 
 section {
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
