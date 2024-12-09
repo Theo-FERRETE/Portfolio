@@ -159,6 +159,7 @@ form button:hover {
     opacity: 1;
     transform: translateY(0);
 }
+
 /* Media Queries spécifiques pour le Galaxy A54 */
 @media only screen and (max-width: 360px) {
     body {
@@ -166,17 +167,22 @@ form button:hover {
     }
 
     header {
-        font-size: 1.2rem; /* Texte plus petit */
-        padding: 10px; /* Hauteur plus compacte */
+        font-size: 1rem; /* Texte plus petit dans l'en-tête */
+        padding: 8px; /* Réduction de la hauteur globale */
+    }
+
+    nav {
+        height: 40px; /* Hauteur réduite de la barre de navigation */
     }
 
     nav ul {
         flex-direction: column; /* Menu vertical sur très petits écrans */
-        gap: 10px; /* Réduction de l'espacement */
+        gap: 8px; /* Réduction de l'espacement entre les liens */
     }
 
     nav ul li a {
-        font-size: 1rem; /* Texte du menu légèrement réduit */
+        font-size: 0.9rem; /* Réduction de la taille de texte des liens */
+        padding: 5px 8px; /* Espacement interne réduit */
     }
 
     h1 {
@@ -206,22 +212,27 @@ form button:hover {
     }
 }
 
+/* Media Queries pour des écrans légèrement plus grands */
 @media only screen and (max-width: 480px) {
     body {
         font-size: 15px;
     }
 
     header {
-        font-size: 1.4rem; /* Texte légèrement plus grand */
-        padding: 15px; /* Un peu plus d'espace que pour 360px */
+        font-size: 1.2rem; /* Texte légèrement plus grand */
+        padding: 10px; /* Un peu plus d'espace que pour 360px */
+    }
+
+    nav {
+        height: 45px; /* Légère augmentation pour les écrans plus grands */
     }
 
     nav ul {
-        gap: 15px; /* Espacement légèrement augmenté */
+        gap: 10px; /* Espacement légèrement augmenté */
     }
 
     nav ul li a {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     h1 {
@@ -235,8 +246,12 @@ form button:hover {
 
 @media only screen and (max-width: 720px) {
     header {
-        font-size: 1.6rem; /* Augmentation progressive */
-        padding: 20px;
+        font-size: 1.4rem; /* Augmentation progressive */
+        padding: 15px;
+    }
+
+    nav {
+        height: 50px; /* Taille standard pour les tablettes */
     }
 
     h1 {
@@ -245,28 +260,5 @@ form button:hover {
 
     .projets-container {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Plus de flexibilité pour les projets */
-    }
-}
-
-@media only screen and (max-height: 2340px) and (orientation: landscape) {
-    main {
-        background-color: #ffecb3; /* Arrière-plan spécial pour le mode paysage */
-    }
-
-    button {
-        width: 75%;
-        font-size: 0.9rem; /* Taille adaptée */
-    }
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 2), 
-       only screen and (min-resolution: 192dpi) {
-    body {
-        font-size: 16px; /* Taille légèrement augmentée pour écrans haute densité */
-    }
-
-    img {
-        max-width: 70%; /* Images légèrement plus grandes */
-        height: auto;
     }
 }
