@@ -194,3 +194,115 @@ footer {
     background: var(--secondary-color);
     color: #fff;
 }
+
+/* Media Queries spécifiques pour le Galaxy A54 */
+@media only screen and (max-width: 360px) {
+    body {
+        font-size: 14px; /* Taille de police adaptée pour petits écrans */
+    }
+
+    header {
+        font-size: 1.2rem; /* Texte plus petit */
+        padding: 10px; /* Hauteur plus compacte */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertical sur très petits écrans */
+        gap: 10px; /* Réduction de l'espacement */
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Texte du menu légèrement réduit */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Taille réduite pour tenir sur l'écran */
+    }
+
+    .projets-container {
+        grid-template-columns: 1fr; /* Une seule colonne pour les projets */
+        padding: 0 10px; /* Réduction des marges latérales */
+    }
+
+    .projet {
+        padding: 10px; /* Réduction des marges internes */
+    }
+
+    form {
+        padding: 10px; /* Réduction du padding pour petits écrans */
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem; /* Taille de police plus petite */
+    }
+
+    form button {
+        font-size: 0.9rem; /* Réduction de la taille du bouton */
+        padding: 8px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        font-size: 1.4rem; /* Texte légèrement plus grand */
+        padding: 15px; /* Un peu plus d'espace que pour 360px */
+    }
+
+    nav ul {
+        gap: 15px; /* Espacement légèrement augmenté */
+    }
+
+    nav ul li a {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .projets-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Deux colonnes si possible */
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    header {
+        font-size: 1.6rem; /* Augmentation progressive */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .projets-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Plus de flexibilité pour les projets */
+    }
+}
+
+@media only screen and (max-height: 2340px) and (orientation: landscape) {
+    main {
+        background-color: #ffecb3; /* Arrière-plan spécial pour le mode paysage */
+    }
+
+    button {
+        width: 75%;
+        font-size: 0.9rem; /* Taille adaptée */
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-resolution: 192dpi) {
+    body {
+        font-size: 16px; /* Taille légèrement augmentée pour écrans haute densité */
+    }
+
+    img {
+        max-width: 70%; /* Images légèrement plus grandes */
+        height: auto;
+    }
+}
