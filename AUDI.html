@@ -1,113 +1,264 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Audi - Performance et Innovation</title>
-  <link rel="stylesheet" href="CSS AUDI.css">
-</head>
-<body>
-  <!-- Header -->
-  <header>
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Audi-Logo_2016.svg/640px-Audi-Logo_2016.svg.png" alt="Logo Audi" />
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#models">Modèles</a></li>
-        <li><a href="#technology">Technologie</a></li>
-        <li><a href="#about">À propos</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; 
+    color: #333;
+    line-height: 1.6;
+}
 
-<!-- Section des modèles -->
-<section id="models" class="models">
-  <h2>Nos Modèles</h2>
-  <div class="car-grid">
-    <!-- Audi RS4 -->
-    <div class="car">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/2021_Audi_RS4_Nogaro_Edition_TFSi_Quattro_Auto_ABT_RS4-S_2.jpg/640px-2021_Audi_RS4_Nogaro_Edition_TFSi_Quattro_Auto_ABT_RS4-S_2.jpg" alt="Audi RS4">
-      <h3>Audi RS4</h3>
-      <p>L'Audi RS4 est un modèle qui allie performance extrême, luxueux confort, et technologie de pointe, faisant d'elle un choix idéal pour les passionnés de conduite sportive, tout en restant pratique pour une utilisation quotidienne.</p>
-      <p class="price">À partir de 80 000 €</p>
-    </div>
-    <!-- Audi Q8 e-tron -->
-    <div class="car">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Audi_Q8_e-tron_Sportback_1X7A7094.jpg/640px-Audi_Q8_e-tron_Sportback_1X7A7094.jpg" alt="Audi Q8 e-tron">
-      <h3>Audi Q8 e-tron</h3>
-      <p>Un SUV électrique haut de gamme avec un design audacieux et une autonomie impressionnante.</p>
-      <p class="price">À partir de 75 000 €</p>
-    </div>
-    <!-- Audi R8 V10 -->
-    <div class="car">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Audi_R8_18.jpg/640px-Audi_R8_18.jpg" alt="Audi R8 V10">
-      <h3>Audi R8 V10</h3>
-      <p>La supercar emblématique d'Audi avec un moteur V10 atmosphérique et une allure sportive.</p>
-      <p class="price">À partir de 150 000 €</p>
-    </div>
-    <!-- Audi A6 Avant -->
-    <div class="car">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Audi_A6_Allroad_Quattro_C8_IMG_0070.jpg/640px-Audi_A6_Allroad_Quattro_C8_IMG_0070.jpg" alt="Audi A6 Avant">
-      <h3>Audi A6 Avant</h3>
-      <p>Une voiture familiale élégante, offrant confort, technologie et espace.</p>
-      <p class="price">À partir de 50 000 €</p>
-    </div>
-    <!-- Audi Q5 -->
-    <div class="car">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Audi_Q5_BW_1.jpg/640px-Audi_Q5_BW_1.jpg" alt="Audi Q5">
-      <h3>Audi Q5</h3>
-      <p>L'Audi Q5 est un SUV haut de gamme, offrant un mélange parfait entre performance, luxe et technologie. Il est l'un des modèles les plus populaires de la marque, combinant confort et robustesse.</p>
-      <p class="price">À partir de 47 000 €</p>
-    </div>
-  </div>
-</section>
+a {
+    text-decoration: none;
+    color: #0066ff; 
+    transition: color 0.3s ease; 
+}
 
-  <!-- Section technologie -->
-  <section id="technology" class="technology">
-    <h2>Technologie Audi</h2>
-    <p>Découvrez comment Audi repousse les limites de l'innovation avec des solutions comme la conduite autonome, l'électrification et les systèmes connectés.</p>
-    <div class="tech-images">
-      <img src="https://blog.audiblainville.com/wp-content/uploads/2022/07/audi-a7-sportback-5-20191540415733626.jpg" alt="Tableau de bord high-tech">
-      <img src="https://media.audifrance.fr/wp-content/uploads/2019/12/A178104_x750.jpg" alt="Conduite autonome">
-    </div>
-  </section>
+a:hover {
+    color: #ff6600;
+}
 
-  <!-- Section à propos -->
-  <section id="about" class="about">
-    <h2>À Propos de Nous</h2>
-    <p>Audi, fondée en 1909 par August Horch, est une marque automobile allemande emblématique. Son nom vient de la traduction latine du nom de famille de son fondateur, "Horch", qui signifie "écouter".
+header {
+    background: linear-gradient(90deg, #0066ff, #00cc99); 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-      L'entreprise a connu une croissance rapide grâce à son adhésion à Auto Union en 1932, marquée par le célèbre logo à quatre anneaux représentant l'union de quatre marques (Audi, Horch, DKW, et Wanderer). Après la Seconde Guerre mondiale, Audi a été rachetée par Volkswagen en 1965.
-      
-      Dans les années 1980, Audi a innové avec le système de transmission intégrale quattro, renforçant sa réputation de performance. Elle a continué d'innover avec des modèles comme l'Audi A8 (châssis en aluminium), l'Audi TT (design sportif) et l'Audi Q7 (SUV de luxe).
-      
-      Aujourd'hui, Audi est reconnue pour ses véhicules de luxe, ses technologies avancées, et son engagement dans l'électrification avec des modèles comme l’Audi e-tron. La marque continue de viser un avenir durable tout en conservant son héritage de performance et de luxe.</p>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/History_Of_Audi_Logo_1.jpg/640px-History_Of_Audi_Logo_1.jpg" alt="Histoire de Audi">
-  </section>
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
 
-  <!-- Section contact -->
-  <section id="contact" class="contact">
-    <h2>Contactez-Nous</h2>
-    <form action="submit-form.php" method="post">
-      <label for="name">Nom :</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email :</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message :</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
+nav ul li {
+    margin: 0;
+}
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Audi. Tous droits réservés. 
-    <div class="socials">
-      <a href="https://www.facebook.com/audi"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/640px-2023_Facebook_icon.svg.png" alt="Facebook"></a>
-      <a href="https://www.instagram.com/audi?igsh=MWVtMmZrc3ZoYzI2Nw=="><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png" alt="Twitter"></a>
-    </div>
-  </footer>
-</body>
-</html>
+nav ul li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #2b02f8;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.projets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.projet {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-align: center;
+}
+
+.projet:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.projet img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.projet h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.projet p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.projet a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0066ff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.projet a:hover {
+    background: #ff6600;
+    color: #fff;
+}
+
+/* Formulaire de contact */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    background-color: #0066ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ff6600;
+}
+
+.section, h1, h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Media Queries spécifiques pour le Galaxy A54 */
+@media only screen and (max-width: 360px) {
+    body {
+        font-size: 14px; /* Taille de police adaptée pour petits écrans */
+    }
+
+    header {
+        font-size: 0.9rem; /* Texte encore plus petit dans l'en-tête */
+        padding: 6px; /* Réduction de la hauteur globale */
+    }
+
+    nav {
+        height: 35px; /* Hauteur encore réduite de la barre de navigation */
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu vertical pour tenir sur l'écran */
+        gap: 5px; /* Réduction de l'espacement entre les liens */
+    }
+
+    nav ul li a {
+        font-size: 0.8rem; /* Réduction supplémentaire de la taille du texte */
+        padding: 4px 6px; /* Espacement interne réduit pour les liens */
+    }
+
+    h1 {
+        font-size: 1.6rem; /* Taille réduite pour tenir sur l'écran */
+    }
+
+    .projets-container {
+        grid-template-columns: 1fr; /* Une seule colonne pour les projets */
+        padding: 0 10px; /* Réduction des marges latérales */
+    }
+
+    .projet {
+        padding: 10px; /* Réduction des marges internes */
+    }
+
+    form {
+        padding: 10px; /* Réduction du padding pour petits écrans */
+    }
+
+    form input, form textarea {
+        font-size: 0.8rem; /* Taille de police plus petite */
+    }
+
+    form button {
+        font-size: 0.8rem; /* Réduction de la taille du bouton */
+        padding: 6px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px; /* Réduction de la taille globale pour uniformiser */
+    }
+
+    header {
+        font-size: 1rem; /* Texte légèrement plus grand */
+        padding: 8px; /* Réduction de la hauteur globale */
+    }
+
+    nav {
+        height: 40px; /* Hauteur légèrement augmentée par rapport à 360px */
+    }
+
+    nav ul {
+        gap: 8px; /* Espacement légèrement augmenté */
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Taille de texte adaptée */
+        padding: 5px 7px; /* Espacement légèrement plus grand */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .projets-container {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Deux colonnes si possible */
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    header {
+        font-size: 1.2rem; /* Taille de texte modérée */
+        padding: 10px;
+    }
+
+    nav {
+        height: 45px; /* Hauteur ajustée pour les tablettes */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .projets-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Plus de flexibilité pour les projets */
+    }
+}
