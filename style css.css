@@ -1,4 +1,3 @@
-/* Base générale */
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
@@ -21,7 +20,7 @@ a:hover {
 header {
     background: linear-gradient(90deg, #0066ff, #00cc99); 
     color: #fff;
-    padding: 15px 0; /* Réduit légèrement la hauteur */
+    padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -32,7 +31,7 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    gap: 15px; /* Espacement ajusté */
+    gap: 20px;
 }
 
 nav ul li {
@@ -40,103 +39,234 @@ nav ul li {
 }
 
 nav ul li a {
-    font-size: 1rem; /* Réduit légèrement la taille pour petits écrans */
+    font-size: 1.2rem;
     font-weight: bold;
     color: #fff;
 }
 
 section {
-    padding: 20px 10px; /* Réduit les marges globales */
+    padding: 40px 20px;
     text-align: center;
 }
 
+h1, h2, h3 {
+    color: #2b02f8;
+}
+
 h1 {
-    font-size: 2rem; /* Taille ajustée pour mieux tenir sur mobile */
+    font-size: 2.5rem;
     margin-bottom: 10px;
 }
 
-/* Projets */
 .projets-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colonnes plus petites */
-    gap: 15px; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
     margin-top: 20px;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .projet {
-    padding: 15px; /* Réduit les marges internes */
-    border-radius: 8px; /* Bordures légèrement arrondies */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-align: center;
 }
 
-/* Formulaire */
+.projet:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.projet img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.projet h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.projet p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.projet a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0066ff;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.projet a:hover {
+    background: #ff6600;
+    color: #fff;
+}
+
+/* Formulaire de contact */
 form {
-    max-width: 400px; /* Réduit la largeur maximale */
-    padding: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form input, form textarea {
-    padding: 8px; /* Réduit légèrement l'espacement */
-    font-size: 0.9rem; /* Taille réduite */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 form button {
-    padding: 8px;
-    font-size: 0.9rem;
+    padding: 10px;
+    background-color: #0066ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
 }
 
-/* Media Queries pour Samsung Galaxy A54 et petits écrans */
-@media screen and (max-width: 360px) {
+form button:hover {
+    background-color: #ff6600;
+}
+
+.section, h1, h2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Media Queries spécifiques pour le Galaxy A54 */
+@media only screen and (max-width: 360px) {
+    body {
+        font-size: 14px; /* Taille de police adaptée pour petits écrans */
+    }
+
     header {
-        padding: 10px 0; /* Hauteur plus compacte */
-        font-size: 1.2rem; /* Réduit la taille du texte */
+        font-size: 1.2rem; /* Texte plus petit */
+        padding: 10px; /* Hauteur plus compacte */
     }
 
     nav ul {
-        flex-direction: column; /* Navigation verticale sur très petits écrans */
-        gap: 10px;
+        flex-direction: column; /* Menu vertical sur très petits écrans */
+        gap: 10px; /* Réduction de l'espacement */
     }
 
     nav ul li a {
-        font-size: 0.9rem; /* Texte plus petit */
+        font-size: 1rem; /* Texte du menu légèrement réduit */
     }
 
     h1 {
-        font-size: 1.8rem;
+        font-size: 1.8rem; /* Taille réduite pour tenir sur l'écran */
     }
 
     .projets-container {
         grid-template-columns: 1fr; /* Une seule colonne pour les projets */
+        padding: 0 10px; /* Réduction des marges latérales */
     }
 
     .projet {
-        padding: 10px;
+        padding: 10px; /* Réduction des marges internes */
+    }
+
+    form {
+        padding: 10px; /* Réduction du padding pour petits écrans */
+    }
+
+    form input, form textarea {
+        font-size: 0.9rem; /* Taille de police plus petite */
+    }
+
+    form button {
+        font-size: 0.9rem; /* Réduction de la taille du bouton */
+        padding: 8px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        font-size: 1.4rem; /* Texte légèrement plus grand */
+        padding: 15px; /* Un peu plus d'espace que pour 360px */
+    }
+
     nav ul {
-        gap: 10px; /* Espacement réduit */
+        gap: 15px; /* Espacement légèrement augmenté */
     }
+
     nav ul li a {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
+
     h1 {
         font-size: 2rem;
     }
+
     .projets-container {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Colonnes plus étroites */
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Deux colonnes si possible */
     }
 }
 
-@media screen and (max-width: 720px) {
+@media only screen and (max-width: 720px) {
     header {
-        padding: 15px;
+        font-size: 1.6rem; /* Augmentation progressive */
+        padding: 20px;
     }
+
     h1 {
         font-size: 2.2rem;
     }
+
     .projets-container {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Plus de flexibilité pour les projets */
+    }
+}
+
+@media only screen and (max-height: 2340px) and (orientation: landscape) {
+    main {
+        background-color: #ffecb3; /* Arrière-plan spécial pour le mode paysage */
+    }
+
+    button {
+        width: 75%;
+        font-size: 0.9rem; /* Taille adaptée */
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), 
+       only screen and (min-resolution: 192dpi) {
+    body {
+        font-size: 16px; /* Taille légèrement augmentée pour écrans haute densité */
+    }
+
+    img {
+        max-width: 70%; /* Images légèrement plus grandes */
+        height: auto;
     }
 }
