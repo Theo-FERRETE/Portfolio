@@ -1,0 +1,216 @@
+.inscription-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  gap: 2rem;
+}
+
+.form-container {
+  flex: 1;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(255, 92, 0, 0.1);
+}
+
+.inscription-title {
+  color: #ff5c00;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.inscription-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inscription-form input {
+  padding: 0.8rem;
+  border: 1px solid #333;
+  background: #232323;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.inscription-form button {
+  padding: 0.9rem;
+  background: #ff5c00;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.inscription-form button:hover {
+  background: #e64a00;
+}
+
+.offers-container {
+  flex: 1;
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(255, 92, 0, 0.1);
+}
+
+.offers-container h2 {
+  text-align: center;
+  color: #ff5c00;
+  margin-bottom: 2rem;
+}
+
+.offer-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.offer-card {
+  background: #232323;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.offer-card:hover {
+  transform: scale(1.03);
+  border-color: #ff5c00;
+}
+
+.offer-card h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.offer-card p {
+  margin: 0.2rem 0;
+}
+
+.price {
+  color: #ff5c00;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+.inscription-form input[type="text"],
+.inscription-form input[type="email"],
+.inscription-form input[type="tel"],
+.inscription-form textarea {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border-radius: 7px;
+  border: 1px solid #444;
+  background: #232323;
+  color: #fff;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+  outline: none;
+  resize: none;
+}
+
+.inscription-form input:focus,
+.inscription-form textarea:focus {
+  border-color: #ff5c00;
+}
+
+.inscription-form textarea {
+  min-height: 60px;
+  max-height: 180px;
+}
+
+.abonnements {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin: 0.5rem 0 0.2rem 0;
+  width: 100%;
+}
+
+.abonnement-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  background: #232323;
+  border-radius: 7px;
+  padding: 0.7rem 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+  border: 1px solid #444;
+}
+
+.abonnement-option input[type="radio"] {
+  accent-color: #fd7f00;
+  margin-top: 0.18em;
+}
+
+.abonnement-option:hover,
+.abonnement-option:focus-within {
+  background: #282828;
+  border-color: #ff5c00;
+}
+
+.abonnement-option strong {
+  color: #ff5c00;
+}
+
+.abonnement-info {
+  color: #fafafa;
+  font-size: 0.97rem;
+  margin-top: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cta-button {
+  background-color: #ff5c00;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.13rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(255,92,0,0.09);
+  margin-top: 0.7rem;
+}
+
+.cta-button:hover {
+  background-color: #e64a00;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.inscription-info {
+  color: #fefefe;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .inscription {
+    padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .inscription h2 {
+    font-size: 1.3rem;
+  }
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+}

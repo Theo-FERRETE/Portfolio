@@ -1,0 +1,306 @@
+/* RESET & BASE */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  background: url('assets/img/hero-fitness.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  position: relative;
+  background: rgba(17, 17, 17, 0.78);
+  padding: 3rem 2rem;
+  border-radius: 22px;
+  max-width: 700px;
+  margin: 2.5rem auto;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.7rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ff5c00;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #fefefe;
+}
+
+.cta-button {
+  background-color: #ff5c00;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.13rem;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(255,92,0,0.09);
+}
+
+.cta-button:hover {
+  background-color: #e64a00;
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* PRESENTATION */
+.presentation {
+  max-width: 1100px;
+  margin: 3rem auto 4rem auto;
+  display: flex;
+  gap: 2.5rem;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.presentation-text {
+  flex: 1 1 340px;
+  min-width: 260px;
+}
+
+.presentation-text h2 {
+  color: #ff5c00;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.presentation-text p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #ddd;
+}
+
+.presentation-images {
+  flex: 1 1 340px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.presentation-images img {
+  width: 48%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(255, 92, 0, 0.15);
+}
+
+/* ACTIVITES */
+.activites {
+  max-width: 1100px;
+  margin: 0 auto 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.activites h2 {
+  color: #ff5c00;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.activites-list {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.activite-item {
+  background: #1e1e1e;
+  border-radius: 14px;
+  padding: 2rem 1.3rem 1.5rem 1.3rem;
+  min-width: 210px;
+  max-width: 270px;
+  flex: 1 1 210px;
+  box-shadow: 0 2px 8px rgba(255,92,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  justify-content: center;
+}
+
+.activite-item:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(255, 92, 0, 0.13);
+}
+
+.activite-item i {
+  color: #ff5c00;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  transition: color 0.2s;
+  justify-content: center;
+}
+
+.activite-item h3 {
+  margin-bottom: 0.7rem;
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.activite-item p {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.activites-btn {
+  margin-top: 1rem;
+}
+
+.activites-btn .cta-button {
+  font-size: 1rem;
+  padding: 0.7rem 1.5rem;
+}
+
+/* HORAIRES */
+.horaires {
+  max-width: 600px;
+  margin: 0 auto 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.horaires h2 {
+  color: #ff5c00;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.table-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.horaires-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 500px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 92, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.horaires-table th,
+.horaires-table td {
+  border: 1px solid #ff5c00;
+  padding: 12px 15px;
+}
+
+.horaires-table th {
+  background-color: #ff5c00;
+  color: #111;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.horaires-table tbody tr:nth-child(even) {
+  background-color: #232323;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 0.5rem;
+  }
+  .logo {
+    margin-bottom: 0.5rem;
+  }
+  .nav-menu {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .nav-menu li a {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+  }
+  .presentation {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .presentation-images img {
+    width: 100%;
+  }
+  .activites-list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: #ff5c00 5 10px 20px rgb(249, 91, 0);
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+  .hero-text {
+    padding: 1.2rem 0.5rem;
+  }
+  .cta-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+  }
+  .presentation-text h2,
+  .activites h2,
+  .horaires h2 {
+    font-size: 1.3rem;
+  }
+  .horaires-table th,
+  .horaires-table td {
+    padding: 7px 5px;
+    font-size: 0.93rem;
+  }
+}

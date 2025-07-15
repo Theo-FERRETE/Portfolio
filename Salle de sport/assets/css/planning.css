@@ -1,0 +1,172 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.planning {
+  max-width: 1100px;
+  margin: 3rem auto 4rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.planning h2 {
+  color: #ff5c00;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.planning-responsive {
+  position: relative;
+}
+
+/* Tableau desktop */
+.planning-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 700px;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(255, 92, 0, 0.15);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.planning-table th,
+.planning-table td {
+  border: 1px solid #ff5c00;
+  padding: 12px 10px;
+}
+
+.planning-table th {
+  background-color: #ff5c00;
+  color: #111;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.planning-table tbody tr:nth-child(even) {
+  background-color: #232323;
+}
+
+/* Planning mobile par jour */
+.planning-mobile {
+  display: none;
+}
+
+.planning-day {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  min-width: 180px;
+  max-width: 250px;
+  margin: 0 auto 1.2rem auto;
+  box-shadow: 0 2px 8px rgba(255,92,0,0.07);
+  text-align: left;
+}
+
+.planning-day h3 {
+  color: #ff5c00;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.planning-day ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.planning-day li {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.7rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.planning-day li span {
+  color: #ffffff;
+  font-weight: 700;
+  min-width: 70px;
+  display: inline-block;
+}
+
+.planning-info {
+  color: #ff5c00;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* RESPONSIVE HEADER & NAV */
+@media (max-width: 900px) {
+.nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 30px;
+    height: auto;
+    gap: 0.5rem;
+  }
+  .logo {
+    margin-bottom: 0.5rem;
+  }
+  .nav-menu {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .nav-menu li a {
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .planning-table {
+    display: none;
+  }
+  .planning-mobile {
+    display: block;
+  }
+  .planning-day {
+    max-width: 100%;
+    padding: 0.7rem 0.6rem;
+  }
+  .planning-day h3 {
+    font-size: 1rem;
+  }
+  .planning-day li {
+    font-size: 0.93rem;
+  }
+  .planning-day li span {
+    min-width: 60px;
+    font-size: 0.93rem;
+  }
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .planning h2 {
+    font-size: 1.3rem;
+  }
+  .planning-day {
+    padding: 0.5rem 0.4rem;
+  }
+}

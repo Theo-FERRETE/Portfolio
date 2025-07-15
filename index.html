@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Théo Ferrete</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="/assets/JS/main.js"></script>
+  <script defer src="/assets/JS/typing.js"></script>
+</head>
+<body class="bg-gray-950 text-gray-200 font-mono">
+
+  <!-- HEADER -->
+  <header class="bg-gray-900 fixed w-full z-50 border-b border-gray-700">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-lg font-bold text-emerald-400">Théo Ferrete</h1>
+      <nav class="hidden md:flex space-x-6 text-gray-300">
+        <a href="#accueil" class="hover:text-emerald-400">Accueil</a>
+        <a href="#projets" class="hover:text-emerald-400">Projets</a>
+        <a href="#contact" class="hover:text-emerald-400">Contact</a>
+      </nav>
+      <button id="burger" class="md:hidden text-gray-200">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 text-gray-200">
+      <a href="#accueil" class="block py-2">Accueil</a>
+      <a href="#projets" class="block py-2">Projets</a>
+      <a href="#contact" class="block py-2">Contact</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="accueil" class="pt-32 pb-16 bg-gray-950">
+    <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      
+      <div>
+        <h2 class="text-4xl sm:text-5xl font-bold text-emerald-400 mb-4">
+          <span id="typing"></span><span class="text-emerald-400 animate-pulse">|</span>
+        </h2>
+        <p class="text-gray-400 mb-6 text-lg">
+          Front-end developer & designer passionné par les interfaces modernes, performantes et accessibles.
+        </p>
+        <div class="flex gap-4">
+          <a href="#projets" class="bg-emerald-500 text-black font-semibold px-6 py-2 rounded hover:bg-emerald-400 transition">Voir mes projets</a>
+          <a href="cv.html" class="border border-emerald-500 text-emerald-400 px-6 py-2 rounded hover:bg-emerald-500 hover:text-black transition" target="_blank">Voir mon CV</a>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <img src="https://cdni.iconscout.com/illustration/premium/thumb/front-end-developer-5791344-4843089.png" alt="Illustration développeur" class="w-full max-w-xs mx-auto">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h3 class="text-3xl font-bold text-center text-emerald-400 mb-10">Mes Projets</h3>
+
+      <!-- Projets pro -->
+      <h4 class="text-2xl text-cyan-400 font-semibold mb-4">Projets Centre de Formation / Pro</h4>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+
+        <!-- Fitzone -->
+        <div class="bg-gray-800 rounded-lg p-4 shadow hover:shadow-xl transition border border-gray-700">
+          <img src="/Salle de sport/assets/img/fitzone.png" alt="Fitzone" class="rounded mb-3">
+          <h5 class="text-xl font-bold text-white">Fitzone</h5>
+          <p class="text-sm text-gray-400 mb-3">Site vitrine pour une salle de sport.</p>
+          <a href="/Salle de sport/index.html" class="text-cyan-400 hover:underline" target="_blank">Live</a>
+        </div>
+
+        <!-- CV -->
+        <div class="bg-gray-800 rounded-lg p-4 shadow hover:shadow-xl transition border border-gray-700">
+          <img src="assets/img/logo-cv.png" alt="CV Web" class="rounded mb-3 w-32 h-32 object-contain mx-auto">
+          <h5 class="text-xl font-bold text-center text-white">Mon CV Web</h5>
+          <p class="text-sm text-gray-400 mb-3 text-center">CV en ligne HTML + Tailwind responsive.</p>
+          <div class="text-center">
+            <a href="cv.html" class="text-cyan-400 hover:underline" target="_blank">Live</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Projets perso -->
+      <h4 class="text-2xl text-cyan-400 font-semibold mb-4">Projets personnels</h4>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Eminem -->
+        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSoO1-9K8yTMmJKuKVdaDarFQJyoaDw-F1ww&s" class="rounded mb-3">
+          <h5 class="text-xl font-bold text-white">Projet Eminem</h5>
+          <p class="text-sm text-gray-400 mb-3">Hommage à Eminem : bio, discographie, carrière.</p>
+          <a href="eminem.html" class="text-cyan-400 hover:underline" target="_blank">Live</a>
+        </div>
+
+        <!-- F1 -->
+        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv4Bhk_UCXI68YxU9at4BFbcrPGoLXAkc-Rg&s" class="rounded mb-3">
+          <h5 class="text-xl font-bold text-white">Formula 1</h5>
+          <p class="text-sm text-gray-400 mb-3">Présentation des écuries, pilotes et classements.</p>
+          <a href="formula1.html" class="text-cyan-400 hover:underline" target="_blank">Live</a>
+        </div>
+
+        <!-- Linkin Park -->
+        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+          <img src="https://www.fnacspectacles.com/magazine/fileadmin/_processed_/c/f/csm_LINKIN_PARK_-_Lyon_2026__Social_-_1200x630__0c06dd566b.jpg" class="rounded mb-3">
+          <h5 class="text-xl font-bold text-white">Linkin Park</h5>
+          <p class="text-sm text-gray-400 mb-3">Page dédiée au groupe : albums et biographie.</p>
+          <a href="linkinpark.html" class="text-cyan-400 hover:underline" target="_blank">Live</a>
+        </div>
+
+        <!-- Music Quiz -->
+        <div class="bg-gray-800 p-4 rounded-lg border border-gray-700">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtunxnSn4lYiRzR3YcSuKP-qsx9veWQ-Ow7w&s" class="rounded mb-3">
+          <h5 class="text-xl font-bold text-white">Music Quiz</h5>
+          <p class="text-sm text-gray-400 mb-3">Jeu musical en JavaScript (deviner les morceaux).</p>
+          <a href="MusicQuiz.html" class="text-cyan-400 hover:underline" target="_blank">Live</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-gray-950 py-16 text-center">
+    <h3 class="text-3xl font-bold text-emerald-400 mb-4">Contacte-moi</h3>
+    <p class="mb-4 text-gray-400">📧 <a href="mailto:theo.ferrete@laplateforme.io" class="text-cyan-400 hover:underline">theo.ferrete@laplateforme.io</a></p>
+    <div class="flex justify-center gap-6 text-gray-400">
+      <a href="https://github.com/Theo-FERRETE" target="_blank" class="hover:text-cyan-400">GitHub</a>
+      <a href="https://linkedin.com/in/theo-ferrete-542a6833a" target="_blank" class="hover:text-cyan-400">LinkedIn</a>
+    </div>
+  </section>
+</body>
+</html>
