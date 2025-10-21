@@ -1,128 +1,176 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV Théo Ferrete</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-light {
+      background-color: #f0f4f8;
+    }
+    .bg-card {
+      background-color: #ffffff;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans antialiased">
-  <div class="max-w-4xl mx-auto px-6 py-10 bg-white shadow-md rounded-lg">
-    
-    <!-- En-tête -->
-    <header class="text-center mb-10">
-      <h1 class="text-4xl font-bold text-gray-800 mb-2">Théo Ferrete</h1>
-      <p class="text-lg text-gray-600">Développeur Web - En formation CDPI à La Plateforme</p>
-      <img src="https://maessencsc.com/wp-content/uploads/2025/01/porsche-911-9912-40-gt3-rs-2018-lizard-green.jpg" alt="Photo de Théo" class="rounded-full w-32 h-32 object-cover mx-auto mt-4 shadow-lg border-4 border-white">
+<body class="bg-light text-gray-800 font-sans antialiased">
+  <div class="max-w-6xl mx-auto px-6 py-10">
+    <header class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-400 rounded-2xl shadow-xl p-8 mb-10">
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <img src="https://maessencsc.com/wp-content/uploads/2025/01/porsche-911-9912-40-gt3-rs-2018-lizard-green.jpg" alt="Photo" class="rounded-full w-32 h-32 object-cover shadow-xl border-4 border-white">
+        <div class="text-center md:text-left flex-1">
+          <h1 class="text-5xl font-bold text-white mb-2">Théo Ferrete</h1>
+          <p class="text-xl text-white mb-4">Développeur Web - En formation CDPI à La Plateforme</p>
+          <div class="flex flex-wrap gap-4 justify-center md:justify-start text-sm text-white">
+            <a href="mailto:theo.ferrete@laplateforme.io" class="flex items-center gap-2 bg-white/20 hover:bg-white/30 px-3 py-2 rounded-lg transition-all">Email</a>
+            <span class="flex items-center gap-2 bg-white/20 px-3 py-2 rounded-lg">06.69.78.14.52</span>
+            <span class="flex items-center gap-2 bg-white/20 px-3 py-2 rounded-lg">Rognac</span>
+            <a href="https://github.com/Theo-FERRETE" target="_blank" class="flex items-center gap-2 bg-white/20 hover:bg-white/30 px-3 py-2 rounded-lg transition-all">GitHub</a>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <!-- Contact -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-700 border-b pb-1 border-blue-200 mb-4">Contact</h2>
-      <ul class="space-y-2 text-gray-700 text-sm">
-        <li>Email : 
-          <a href="mailto:theo.ferrete@laplateforme.io" class="text-red-500 hover:underline">theo.ferrete@laplateforme.io</a> / 
-          <a href="mailto:theo.ferrete@gmail.com" class="text-red-500 hover:underline">theo.ferrete@gmail.com</a>
-        </li>
-        <li>Téléphone : 06.69.78.14.52</li>
-        <li>Ville : Rognac</li>
-        <li>GitHub : 
-          <a href="https://github.com/Theo-FERRETE" target="_blank" class="text-red-500 hover:underline">Theo-FERRETE</a>
-        </li>
-      </ul>
-    </section>
+    <!-- Compétences, Qualités, Langues -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
+      <div class="bg-card rounded-xl shadow-md p-6 border-2 border-emerald-300 hover:border-emerald-500 transition-all">
+        <h2 class="text-2xl font-bold text-emerald-600 mb-4">Compétences</h2>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">HTML / CSS</span>
+          <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">PHP</span>
+          <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">JavaScript</span>
+          <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">SQL</span>
+          <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">React</span>
+          <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">Docker</span>
+          <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">GitHub</span>
+          <span class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm font-medium">Figma</span>
+        </div>
+      </div>
 
-    <!-- Compétences & Qualités -->
-    <section class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10 items-start">
-      <div>
-        <h2 class="text-2xl font-bold text-blue-700 border-b pb-1 border-blue-200 mb-4">Compétences Techniques</h2>
-        <ul class="list-disc pl-5 text-gray-700 space-y-2 text-sm">
-          <li>HTML / CSS</li>
-          <li>PHP</li>
-          <li>GitHub</li>
-          <li>Figma</li>
-          <li>JavaScript</li>
-          <li>SQL</li>
-          <li>Docker</li>
-          <li>React</li>
+      <div class="bg-card rounded-xl shadow-md p-6 border-2 border-cyan-300 hover:border-cyan-500 transition-all">
+        <h2 class="text-2xl font-bold text-cyan-600 mb-4">Qualités</h2>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-2 text-gray-700">
+            <span class="w-2 h-2 bg-cyan-500 rounded-full"></span>
+            Organisé
+          </li>
+          <li class="flex items-center gap-2 text-gray-700">
+            <span class="w-2 h-2 bg-cyan-500 rounded-full"></span>
+            Travail d'équipe
+          </li>
+          <li class="flex items-center gap-2 text-gray-700">
+            <span class="w-2 h-2 bg-cyan-500 rounded-full"></span>
+            Autonome
+          </li>
+          <li class="flex items-center gap-2 text-gray-700">
+            <span class="w-2 h-2 bg-cyan-500 rounded-full"></span>
+            Curieux
+          </li>
         </ul>
       </div>
-      <div>
-        <h2 class="text-2xl font-bold text-blue-700 border-b pb-1 border-blue-200 mb-4">Qualités</h2>
-        <ul class="list-disc pl-5 text-gray-700 space-y-2 text-sm">
-          <li>Organisé</li>
-          <li>Travail d’équipe</li>
-          <li>Autonome</li>
-          <li>Curieux</li>
+
+      <div class="bg-card rounded-xl shadow-md p-6 border-2 border-blue-300 hover:border-blue-500 transition-all">
+        <h2 class="text-2xl font-bold text-blue-600 mb-4">Langues</h2>
+        <ul class="space-y-3">
+          <li class="flex items-center gap-2 text-gray-700">
+            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+            Français : Langue maternelle
+          </li>
+          <li class="flex items-center gap-2 text-gray-700">
+            <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+            Anglais : Niveau scolaire
+          </li>
         </ul>
       </div>
-    </section>
+    </div>
 
-    <!-- Langues -->
+    <!-- Expérience -->
     <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-700 border-b pb-1 border-blue-200 mb-4">Langues</h2>
-      <ul class="list-disc pl-5 text-gray-700 space-y-2 text-sm">
-        <li>Français : Langue maternelle</li>
-        <li>Anglais : Niveau scolaire</li>
-      </ul>
-    </section>
-
-    <!-- Expérience Professionnelle -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-700 border-b pb-1 border-blue-200 mb-4">Expérience Professionnelle</h2>
-      <div class="bg-white rounded-lg shadow-md p-4 border-l-4 border-blue-500">
-        <h3 class="font-semibold text-gray-800">2023 - 2024 : Agent d'exploitation</h3>
-        <p class="text-sm text-gray-500">S.T.A.R</p>
-        <ul class="list-disc pl-5 mt-2 text-gray-700 space-y-1 text-sm">
-          <li>Organisation des transports de marchandises</li>
-          <li>Réponses aux demandes des clients</li>
-          <li>Organisation des tournées des chauffeurs</li>
+      <h2 class="text-3xl font-bold text-emerald-600 mb-6">Expérience Professionnelle</h2>
+      <div class="bg-card rounded-xl shadow-md p-6 border-l-4 border-emerald-400">
+        <h3 class="font-bold text-xl text-gray-900">2023 - 2024 : Agent d'exploitation</h3>
+        <p class="text-sm text-cyan-600 mb-3">S.T.A.R</p>
+        <ul class="space-y-2 text-gray-700">
+          <li class="flex items-start gap-2">
+            <span class="text-emerald-500 mt-1">▸</span>
+            Organisation des transports de marchandises
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-emerald-500 mt-1">▸</span>
+            Réponses aux demandes des clients
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-emerald-500 mt-1">▸</span>
+            Organisation des tournées des chauffeurs
+          </li>
         </ul>
       </div>
     </section>
 
     <!-- Formations -->
     <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-700 border-b pb-1 border-blue-200 mb-4">Formations</h2>
+      <h2 class="text-3xl font-bold text-cyan-600 mb-6">Formations</h2>
       <div class="space-y-4">
-        <div class="bg-white rounded-lg shadow-md p-4 border-l-4 border-blue-500">
-          <p class="font-semibold text-gray-800">CDPI d'une durée de 16 mois (2025 - 2026)</p>
-          <p class="text-sm text-gray-500">La Plateforme</p>
+        <div class="bg-card rounded-xl shadow-md p-5 border-l-4 border-cyan-400 hover:border-cyan-600 transition-all">
+          <p class="font-bold text-lg text-gray-900">CDPI d'une durée de 16 mois (2025 - 2026)</p>
+          <p class="text-sm text-cyan-600">La Plateforme</p>
         </div>
-        <div class="bg-white rounded-lg shadow-md p-4 border-l-4 border-blue-500">
-          <p class="font-semibold text-gray-800">Bachelor IT Dév. Web (2024 - 2025)</p>
-          <p class="text-sm text-gray-500">La Plateforme</p>
+        <div class="bg-card rounded-xl shadow-md p-5 border-l-4 border-cyan-400 hover:border-cyan-600 transition-all">
+          <p class="font-bold text-lg text-gray-900">Bachelor IT Dév. Web (2024 - 2025)</p>
+          <p class="text-sm text-cyan-600">La Plateforme</p>
         </div>
-        <div class="bg-white rounded-lg shadow-md p-4 border-l-4 border-blue-500">
-          <p class="font-semibold text-gray-800">Bac Pro OTM (2023)</p>
-          <p class="text-sm text-gray-500">Lycée Caucadis</p>
+        <div class="bg-card rounded-xl shadow-md p-5 border-l-4 border-cyan-400 hover:border-cyan-600 transition-all">
+          <p class="font-bold text-lg text-gray-900">Bac Pro OTM (2023)</p>
+          <p class="text-sm text-cyan-600">Lycée Caucadis</p>
         </div>
       </div>
     </section>
 
     <!-- Projets -->
     <section class="mb-10">
-      <h2 class="text-2xl font-bold text-blue-700 border-b pb-1 border-blue-200 mb-4">Projets</h2>
-      <ul class="list-disc pl-5 text-gray-700 space-y-2 text-sm">
-        <li>Fansite - HTML / CSS</li>
-        <li>Tic Tac Toe - Python</li>
-        <li>Portfolio - HTML / CSS / JS</li>
-        <li>Site Matcha Tea - HTML / CSS</li>
-        <li>Boutique en Ligne - HTML / CSS / PHP / SQL</li>
-        <li>Jeu Memory - React</li>
-        <li>Conteneurisation - Docker</li>
-      </ul>
+      <h2 class="text-3xl font-bold text-blue-600 mb-6">Projets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="bg-card rounded-lg p-4 border-2 border-blue-200 hover:border-blue-500 transition-all">
+          <p class="text-gray-900 font-semibold">Fansite</p>
+          <p class="text-sm text-gray-600">HTML / CSS</p>
+        </div>
+        <div class="bg-card rounded-lg p-4 border-2 border-blue-200 hover:border-blue-500 transition-all">
+          <p class="text-gray-900 font-semibold">Tic Tac Toe</p>
+          <p class="text-sm text-gray-600">Python</p>
+        </div>
+        <div class="bg-card rounded-lg p-4 border-2 border-blue-200 hover:border-blue-500 transition-all">
+          <p class="text-gray-900 font-semibold">Portfolio</p>
+          <p class="text-sm text-gray-600">HTML / CSS / JS</p>
+        </div>
+        <div class="bg-card rounded-lg p-4 border-2 border-blue-200 hover:border-blue-500 transition-all">
+          <p class="text-gray-900 font-semibold">Site Matcha Tea</p>
+          <p class="text-sm text-gray-600">HTML / CSS</p>
+        </div>
+        <div class="bg-card rounded-lg p-4 border-2 border-blue-200 hover:border-blue-500 transition-all">
+          <p class="text-gray-900 font-semibold">Boutique en Ligne</p>
+          <p class="text-sm text-gray-600">HTML / CSS / PHP / SQL</p>
+        </div>
+        <div class="bg-card rounded-lg p-4 border-2 border-blue-200 hover:border-blue-500 transition-all">
+          <p class="text-gray-900 font-semibold">Jeu Memory</p>
+          <p class="text-sm text-gray-600">React</p>
+        </div>
+        <div class="bg-card rounded-lg p-4 border-2 border-blue-200 hover:border-blue-500 transition-all">
+          <p class="text-gray-900 font-semibold">Conteneurisation</p>
+          <p class="text-sm text-gray-600">Docker</p>
+        </div>
+      </div>
     </section>
 
     <!-- Loisirs -->
     <section>
-      <h2 class="text-2xl font-bold text-blue-700 border-b pb-1 border-blue-200 mb-4">Loisirs</h2>
-      <ul class="list-disc pl-5 text-gray-700 space-y-2 text-sm">
-        <li>Informatique</li>
-        <li>Cinéma</li>
-        <li>Jeux vidéos</li>
-        <li>Musique</li>
-      </ul>
+      <h2 class="text-3xl font-bold text-purple-600 mb-6">Loisirs</h2>
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full border-2 border-purple-300 font-medium">Informatique</span>
+        <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full border-2 border-purple-300 font-medium">Cinéma</span>
+        <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full border-2 border-purple-300 font-medium">Jeux vidéos</span>
+        <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full border-2 border-purple-300 font-medium">Musique</span>
+      </div>
     </section>
 
   </div>
