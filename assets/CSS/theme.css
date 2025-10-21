@@ -1,0 +1,49 @@
+/* Styles de base */
+.bg-gray-950 {
+  background-color: #030712 !important;
+}
+
+.text-emerald-400 {
+  color: #34d399 !important;
+}
+
+.border-gray-700 {
+  border-color: #374151 !important;
+}
+
+/* Mode clair */
+body.light-mode {
+  background-color: #f0f4f8 !important;
+  color: #1f2937 !important;
+}
+
+body.light-mode .bg-gray-950 {
+  background-color: #f0f4f8 !important;
+}
+
+body.light-mode .bg-gray-900 {
+  background-color: #ffffff !important;
+  border-color: #e5e7eb !important;
+}
+
+body.light-mode .bg-gray-800 {
+  background-color: #ffffff !important;
+  border-color: #e5e7eb !important;
+}
+
+body.light-mode .text-gray-200,
+body.light-mode .text-gray-300,
+body.light-mode .text-gray-400 {
+  color: #374151 !important;
+}
+
+body.light-mode .border-gray-700 {
+  border-color: #d1d5db !important;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h5 {
+  color: #111827 !important;
+}

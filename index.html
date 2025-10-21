@@ -8,21 +8,12 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- DaisyUI via CDN -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+  <!-- Styles du thème -->
+  <link href="assets/CSS/theme.css" rel="stylesheet" type="text/css" />
   
   <script defer src="assets/JS/main.js"></script>
   <script defer src="assets/JS/typing.js"></script>
-  
-  <style>
-    .bg-gray-950 {
-      background-color: #030712 !important;
-    }
-    .text-emerald-400 {
-      color: #34d399 !important;
-    }
-    .border-gray-700 {
-      border-color: #374151 !important;
-    }
-  </style>
+  <script defer src="assets/JS/theme.js"></script>
 </head>
 <body class="bg-gray-950 text-gray-200 font-mono">
 
@@ -30,17 +21,36 @@
   <header class="bg-gray-900 fixed w-full z-50 border-b border-gray-700">
     <div class="container mx-auto px-4 py-4 flex justify-between items-center">
       <h1 class="text-lg font-bold text-emerald-400">Théo Ferrete</h1>
-      <nav class="hidden md:flex space-x-6 text-gray-300">
+      <nav class="hidden md:flex space-x-6 text-gray-300 items-center">
         <a href="#accueil" class="hover:text-emerald-400 transition-colors duration-200">Accueil</a>
         <a href="#projets" class="hover:text-emerald-400 transition-colors duration-200">Projets</a>
         <a href="#contact" class="hover:text-emerald-400 transition-colors duration-200">Contact</a>
+        <!-- Bouton toggle mode -->
+        <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-800 transition-colors duration-200">
+          <svg id="theme-icon-dark" class="w-5 h-5 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+          <svg id="theme-icon-light" class="w-5 h-5 text-gray-300 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+          </svg>
+        </button>
       </nav>
-      <button id="burger" class="md:hidden text-gray-200 btn btn-ghost">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
+      <div class="md:hidden flex items-center gap-2">
+        <button id="theme-toggle-mobile-header" class="p-2 rounded-lg hover:bg-gray-800 transition-colors duration-200 text-gray-200">
+          <svg id="theme-icon-dark-mobile-header" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+          </svg>
+          <svg id="theme-icon-light-mobile-header" class="w-5 h-5 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+          </svg>
+        </button>
+        <button id="burger" class="text-gray-200 btn btn-ghost">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
     </div>
     <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 text-gray-200">
       <a href="#accueil" class="block py-2 hover:text-emerald-400 transition-colors duration-200">Accueil</a>
